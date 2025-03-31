@@ -16,7 +16,7 @@ div.grid-dim-container {
 
 div.grid-container {
   display: flex;
-  border: solid black 0.5px;
+  border: solid black 2px;
 }
 
 div.grid-prop-container {
@@ -28,7 +28,6 @@ div.grid-prop-container {
 
 div.div-grid {
   box-sizing: border-box;
-  border: solid black 1px;
 }
 
 div.div-grid:hover {
@@ -51,4 +50,9 @@ button:hover {
   cursor: pointer;
   transition: 0.15s;
   transform: scale(1.02);
+}
+
+button:active {
+  transition: 0.1s;
+  transform: scale(1);
 }
