@@ -6,13 +6,24 @@
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+div.grid-dim-container {
+  display: flex;
 }
 
 div.grid-container {
   display: flex;
   border: solid black 0.5px;
+}
+
+div.grid-prop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 div.div-grid {
@@ -22,4 +33,22 @@ div.div-grid {
 
 div.div-grid:hover {
   cursor: crosshair;
+}
+
+button {
+  font-family: "Roboto", "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: white;
+  border: solid black 2.5px;
+  height: 80px;
+  width: 200px;
+  border-radius: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: 0.15s;
+  transform: scale(1.02);
 }

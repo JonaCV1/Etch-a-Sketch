@@ -22,3 +22,8 @@ grids.forEach((grid) => {
     event.target.style.background = "blue";
   });
 });
+
+btnGridDimension = document.querySelector("button#grid-dimension");
+btnGridDimension.addEventListener("click", () => {
+  rowNumber = prompt("Type the number of row in the grid (max 100): ");
+});
