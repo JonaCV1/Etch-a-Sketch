@@ -15,3 +15,10 @@ for (let i = 0; i < rowNumber; i++) {
     rowContainer.appendChild(divGrid);
   }
 }
+
+grids = document.querySelectorAll("div.div-grid");
+grids.forEach((grid) => {
+  grid.addEventListener("mouseover", (event) => {
+    event.target.style.background = "blue";
+  });
+});
